@@ -10,7 +10,7 @@
 ### Back end:
 1. Clone the repo and cd into backend/
 2. Create a virtual environment and install requirements
-3. Seed the database with
+3. Seed the database with initial data
 
         python course_loader.py
         python student_lader.py
