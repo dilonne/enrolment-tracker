@@ -27,9 +27,9 @@ def create_csv():
     enrolments_schema = EnrolmentSchema(many=True)
     enrolments = enrolments_schema.dump(enrolments).data
 
-    myFile = open('enrolments.csv', 'w')  
+    csv_file = open('enrolments.csv', 'w')  
     with csv_file:  
-        fields = ['student_name', 'course_name','year']
+        fields = ['id','student_name', 'course_name','year']
         writer = csv.DictWriter(csv_file, fieldnames=fields)    
         writer.writeheader()
 
